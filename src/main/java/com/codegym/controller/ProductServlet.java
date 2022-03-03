@@ -147,10 +147,7 @@ public class ProductServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
-    private void showFindProductByName(HttpServletRequest request, HttpServletResponse response){
-        RequestDispatcher dispatcher = request.getRequestDispatcher("product/list.jsp");
 
-    }
 
     private void findProductByName(HttpServletRequest request, HttpServletResponse response) {
         String name = request.getParameter("inputProduct");
@@ -192,11 +189,6 @@ public class ProductServlet extends HttpServlet {
                 viewProduct(request, response);
                 break;
             }
-            case "find": {
-                findProductByName(request, response);
-                break;
-            }
-
             default: {
                 listProducts(request, response);
                 break;

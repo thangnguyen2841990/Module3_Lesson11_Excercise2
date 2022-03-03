@@ -14,12 +14,13 @@
 <h1>Products</h1>
 <p><a href="/products?action=create">Create new product</a>
 </p>
-<form method="post" action="/products?=find">
-    <div class="findProductByName">
-        <h4>Find product by name</h4>
-        <input type="text" name="inputProduct" placeholder="Enter product name: ">
-        <input type="submit" value="Search">
-    </div>
+<form method="post" action="/products?action=find">
+        <div class="findProductByName">
+            <h4>Find product by name</h4>
+            <input type="text" name="inputProduct" placeholder="Enter product name: ">
+            <input type="submit" value="Search">
+        </div>
+
 </form>
 <table border="1">
     <tr>
